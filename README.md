@@ -1,16 +1,11 @@
-# educonecta
+# Educonecta app
 
-A new Flutter project.
+A new Flutter project has been built for children and teenager learn about any contents kind of math, language, history, programming and other things. I want to do it for free for them that don't have access to a computer. 
+
+I have as a goal acquire new knowledges and improve my skills in Flutter, a project for the world and for me. 
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+The app consist in some applications how clean code, getx statement and firebase implementation. It has been a little difficult for me, because my knowledges are limited. Although it takes some time I believe that it is possible. 
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Check it below:
