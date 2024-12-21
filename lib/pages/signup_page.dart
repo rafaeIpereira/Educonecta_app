@@ -90,6 +90,7 @@ class _SignUpPageState extends State<SignUpPage> {
                       const Image(image: AssetImage('assets/logo2.png')),
                       TextFieldForm(
                         hintText: 'Full name',
+                        hintStyle: TextStyle(fontSize: 14),
                         suffixIcon: Icon(Icons.person),
                         obscureText: false,
                         controller: _nameController,
@@ -99,6 +100,7 @@ class _SignUpPageState extends State<SignUpPage> {
                       ),
                       TextFieldForm(
                         hintText: 'Email',
+                        hintStyle: TextStyle(fontSize: 14),
                         suffixIcon: Icon(Icons.email),
                         obscureText: false,
                         controller: _emailController,
@@ -108,6 +110,7 @@ class _SignUpPageState extends State<SignUpPage> {
                       ),
                       TextFieldForm(
                         hintText: 'Password',
+                        hintStyle: TextStyle(fontSize: 14),
                         suffixIcon: Icon(Icons.visibility_off),
                         obscureText: true,
                         controller: _passwordController,
@@ -118,13 +121,13 @@ class _SignUpPageState extends State<SignUpPage> {
                       ElevatedButton(
                         onPressed: _isLoading ? null : () => _registerUser(context),   
                         style: ElevatedButton.styleFrom(
-                            backgroundColor: Colors.red,
-                            fixedSize: const Size(380, 68)),
+                            backgroundColor: Colors.blue,
+                            fixedSize: const Size(356, 62)),
                         child: const Text(
                                 'Sign Up',
                                 style: TextStyle(
                                   color: Colors.white,
-                                  fontSize: 16,
+                                  fontSize: 14,
                                   fontWeight: FontWeight.w800,
                                 ),
                               ),
@@ -134,30 +137,33 @@ class _SignUpPageState extends State<SignUpPage> {
                       ),
                       TextButton(
                           onPressed: () {},
-                          child: const Text('Forgot Password?')),
+                          child: const Text('Forgot Password?', style: TextStyle(fontSize: 14),)),
                       const SizedBox(
                         height: 5,
                       ),
-                      Row(
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 35),
-                            child: Container(
-                              height: 2.0,
-                              width: 130,
-                              color: Colors.grey,
+                      Padding(
+                        padding: const EdgeInsets.only(left: 60),
+                        child: Row(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 10),
+                              child: Container(
+                                height: 1.0,
+                                width: 128,
+                                color: Colors.grey,
+                              ),
                             ),
-                          ),
-                          const Text('OR'),
-                          Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 35),
-                            child: Container(
-                              height: 2.0,
-                              width: 130,
-                              color: Colors.grey,
+                            const Text('OR',),
+                            Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 15),
+                              child: Container(
+                                height: 1.0,
+                                width: 120,
+                                color: Colors.grey,
+                              ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
                       const SizedBox(
                         height: 20,
@@ -165,21 +171,21 @@ class _SignUpPageState extends State<SignUpPage> {
                       ElevatedButton(
                         onPressed: () {},
                         style: ElevatedButton.styleFrom(
-                            backgroundColor: Colors.blue,
-                            fixedSize: const Size(380, 68)),
-                        child: const Row(
+                            backgroundColor: Colors.blueAccent[400],
+                            fixedSize: const Size(356, 62)),
+                        child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
-                            Icon(
-                              Icons.people,
-                              color: Colors.white,
-                            ),
-                            Text(
-                              'Log in with Facebook',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 16,
-                                fontWeight: FontWeight.w800,
+                            Image.asset('assets/facebook.png', fit: BoxFit.cover, width: 70,),
+                            Padding(
+                              padding: const EdgeInsets.only(right: 30),
+                              child: const Text(
+                                'Log in with Facebook',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w800,
+                                ),
                               ),
                             ),
                           ],
@@ -192,17 +198,20 @@ class _SignUpPageState extends State<SignUpPage> {
                           onPressed: () {},
                           style: ElevatedButton.styleFrom(
                               backgroundColor: Colors.white,
-                              fixedSize: const Size(380, 68)),
-                          child: const Row(
+                              fixedSize: const Size(356, 62)),
+                          child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
-                              Icon(Icons.people),
-                              Text(
-                                'Log in with Google',
-                                style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.w800,
+                              Image.asset('assets/google.png', fit: BoxFit.cover, width: 50,),
+                              Padding(
+                                padding: const EdgeInsets.only(right: 30),
+                                child: const Text(
+                                  'Log in with Google',
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w800,
+                                  ),
                                 ),
                               ),
                             ],
@@ -215,7 +224,7 @@ class _SignUpPageState extends State<SignUpPage> {
                         children: [
                           const Text(
                             "Already an account yet?",
-                            style: TextStyle(fontSize: 16),
+                            style: TextStyle(fontSize: 14),
                           ),
                           TextButton(
                               onPressed: () {
@@ -226,7 +235,7 @@ class _SignUpPageState extends State<SignUpPage> {
                               },
                               child: const Text(
                                 'Sign In',
-                                style: TextStyle(fontSize: 16),
+                                style: TextStyle(fontSize: 14),
                               ))
                         ],
                       )
